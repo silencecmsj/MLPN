@@ -112,7 +112,7 @@ if __name__ == '__main__':
 
 
     model = HTN(args).cuda()
-    checkpoint = torch.load(r'D:\python_project\MLPN\Checkpoint\c23-Loc-Deepfakes\FF++_240225221535_0.9100_40.tar')
+    checkpoint = torch.load(r'Checkpoint\c23-Deepfakes\FF++_240225221535.tar')
     model.load_state_dict(checkpoint['model_state_dict'])
 
     test_loss, test_seg_loss, test_cls_loss, test_acc, test_auc, test_eer, metric, tpr, fpr = \
