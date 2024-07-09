@@ -120,10 +120,10 @@ if __name__ == '__main__':
     logger.info('Epoch {}/{}: TES loss:{:.4} segloss:{:.4} clsloss:{:.4} acc:{:.4} auc:{:.4} eer:{:.4}'.
                 format(1, args.epoch, test_loss, test_seg_loss, test_cls_loss, test_acc, test_auc, test_eer))
 
-    viz.line(tpr,  ## Y的下一个点
-             fpr,  ## X的下一个点
-             win=args.dataset,  ## 窗口名称
-             update='append'  ## 添加到上一个点后面
+    viz.line(tpr,  
+             fpr,  
+             win=args.dataset,  
+             update='append'  
              )
 
 
